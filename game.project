@@ -1,0 +1,19 @@
+[bootstrap]
+main_collection = /loading-screen/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 640
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = loading-screen
+
+[library]
+include_dirs = loading-screen
+

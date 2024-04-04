@@ -1,0 +1,125 @@
+	.canvas-app-progress {
+		position: absolute;
+		background-color: #394046;
+		height: 6px;
+		margin-top: -6px;
+		width: 100%;
+	}
+
+	.canvas-app-progress-bar {
+		font-size: 12px;
+		height: 6px;
+		color: rgb(255, 255, 255);
+		background-color: #1a72eb;
+		text-align: center;
+		line-height: 20px;
+	}
+{{#html5.show_fullscreen_button}}	
+	.button {
+		background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='yes'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='16px' viewBox='0 0 16 16' version='1.1' style='zoom: 32;'%3E%3Ctitle%3Eic-16-fullscreen%3C/title%3E%3Cg id='ic-16-fullscreen' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M3,11.5 C3,11.776 3.224,12 3.5,12 L12.5,12 C12.776,12 13,11.776 13,11.5 L13,4.5 C13,4.224 12.776,4 12.5,4 L3.5,4 C3.224,4 3,4.224 3,4.5 L3,11.5 Z M14,11 L14,13 L12,13 C11.724,13 11.5,13.224 11.5,13.5 C11.5,13.776 11.724,14 12,14 L14.5,14 C14.776,14 15,13.776 15,13.5 L15,11 C15,10.724 14.776,10.5 14.5,10.5 C14.224,10.5 14,10.724 14,11 Z M12,2 C11.724,2 11.5,2.224 11.5,2.5 C11.5,2.776 11.724,3 12,3 L14,3 L14,5 C14,5.276 14.224,5.5 14.5,5.5 C14.776,5.5 15,5.276 15,5 L15,2.5 C15,2.224 14.776,2 14.5,2 L12,2 Z M2,13 L2,11 C2,10.724 1.776,10.5 1.5,10.5 C1.224,10.5 1,10.724 1,11 L1,13.5 C1,13.776 1.224,14 1.5,14 L4,14 C4.276,14 4.5,13.776 4.5,13.5 C4.5,13.224 4.276,13 4,13 L2,13 Z M1,2.5 C1,2.224 1.224,2 1.5,2 L4,2 C4.276,2 4.5,2.224 4.5,2.5 C4.5,2.776 4.276,3 4,3 L2,3 L2,5 C2,5.276 1.776,5.5 1.5,5.5 C1.224,5.5 1,5.276 1,5 L1,2.5 Z ' id='fill_1' fill='%23fafcff'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		border-color: transparent;
+		float: left;
+		color: #fafcff;
+		padding-left: 50%;
+		padding: 0px 0px 0px 20px;
+		cursor:pointer;
+		background-position: left bottom;
+		margin-left: 2px;
+	}
+{{/html5.show_fullscreen_button}}
+{{#html5.show_made_with_defold}}
+	.link {
+		text-align: right;
+		color: #BFBFBF;
+		margin-right: 2px;
+	}
+	a {
+		font-weight: 600;
+		color: #fafcff;
+		text-decoration: none;
+	}
+{{/html5.show_made_with_defold}}
+	.link, .button {
+		font-family: sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0px;
+		padding-top: 12px;
+	}
+
+	.buttons-background {
+		background-color: #1e2226;
+		width: 100%;
+		height: 42px;
+	}
+
+	body {
+		background-color: #1e2226;
+	}
+
+	.canvas-app-container {
+		background: rgba(36,41,46,1);
+		background: -moz-linear-gradient(-45deg, rgba(36,41,46,1) 0%, rgba(36,41,46,1) 49%, rgba(38,43,49,1) 50%, rgba(38,43,49,1) 100%);
+		background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(36,41,46,1)), color-stop(49%, rgba(36,41,46,1)), color-stop(50%, rgba(38,43,49,1)), color-stop(100%, rgba(38,43,49,1)));
+		background: -webkit-linear-gradient(-45deg, rgba(36,41,46,1) 0%, rgba(36,41,46,1) 49%, rgba(38,43,49,1) 50%, rgba(38,43,49,1) 100%);
+		background: -o-linear-gradient(-45deg, rgba(36,41,46,1) 0%, rgba(36,41,46,1) 49%, rgba(38,43,49,1) 50%, rgba(38,43,49,1) 100%);
+		background: -ms-linear-gradient(-45deg, rgba(36,41,46,1) 0%, rgba(36,41,46,1) 49%, rgba(38,43,49,1) 50%, rgba(38,43,49,1) 100%);
+		background: linear-gradient(135deg, rgba(36,41,46,1) 0%, rgba(36,41,46,1) 49%, rgba(38,43,49,1) 50%, rgba(38,43,49,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24292e', endColorstr='#262b31', GradientType=1 );
+	}
+
+	.canvas-app-canvas-container {
+		height: 100%;
+	}
+
+	.canvas-app-canvas-logo {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		width: 30%;
+		aspect-ratio: 1/1;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+{{#DEFOLD_SPLASH_IMAGE}}
+		background-image: url("{{DEFOLD_SPLASH_IMAGE}}");
+{{/DEFOLD_SPLASH_IMAGE}}
+{{^DEFOLD_SPLASH_IMAGE}}
+		background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-184 254 242 233" style="enable-background:new -184 254 242 233;" xml:space="preserve"><style type="text/css">.st0{fill:%2315244A;}.st1{fill:url(%23SVGID_1_);}.st2{fill:url(%23SVGID_2_);}</style><g><path class="st0" d="M-22.667,347.115L-63,370.394l-40.333-23.279L-63,323.836C-63,323.836-22.667,347.115-22.667,347.115z M17.667,370.394v46.558L58,393.673L17.667,370.394z M-183.959,393.673l40.333,23.279v-46.558L-183.959,393.673z M-63,463.509l40.333,23.279l40.333-23.279l-40.333-23.279l40.333-23.279l-40.333-23.278L-63,416.952l-40.333-23.279l-40.333,23.279l40.333,23.279l-40.333,23.279l40.333,23.279L-63,463.509z"/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-124.5723" y1="507.3206" x2="39.1188" y2="413.3376" gradientTransform="matrix(1 0 0 -1 0 796)"><stop offset="0" style="stop-color:%231C68EC"/><stop offset="1" style="stop-color:%2300E9DF"/></linearGradient><path class="st1" d="M17.625,416.952v46.558l-40.333-23.279C-22.708,440.231,17.625,416.952,17.625,416.952z M-63,416.952v-46.558l-40.333-23.279v46.558L-63,416.952z M-103.333,254v46.558L-63,277.279L-103.333,254z M-22.667,393.673l40.333,23.279v-46.558L58,393.673v-46.558l-40.333-23.279v-46.558L-22.667,254v46.558L-63,277.279v46.558l40.333,23.279C-22.667,347.116-22.667,393.673-22.667,393.673z"/><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-178.1252" y1="492.0077" x2="-23.7672" y2="403.0087" gradientTransform="matrix(1 0 0 -1 0 796)"><stop offset="0" style="stop-color:%23FF3C2A"/><stop offset="1" style="stop-color:%23FFD215"/></linearGradient><path class="st2" d="M-63,416.952v-46.558l40.333-23.279v46.558L-63,416.952z M-63,277.279l40.333,23.279V254C-22.667,254-63,277.279-63,277.279z M-103.333,347.115L-63,323.836v-46.558l-40.333,23.279V254l-40.333,23.279v46.558L-184,347.115v46.558l40.333-23.279v46.558l40.333-23.279L-103.333,347.115L-103.333,347.115z M-143.625,416.952v46.558l40.333-23.279L-143.625,416.952L-143.625,416.952z"/></g></svg>');
+{{/DEFOLD_SPLASH_IMAGE}}
+		border-radius: 10%;
+	}
+
+	.canvas-app-progress {
+		position: absolute;
+		width: 130%;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -30px;
+		height: 10px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.canvas-app-progress-bar {
+    	height: 10px;
+		transition: transform 1s ease;
+		transform-origin: left;
+		transform: scaleX(1.0);
+	}
+
+{{#DEFOLD_SPLASH_IMAGE}}
+	@media (orientation: landscape) {
+		.canvas-app-canvas-logo {
+			width: auto;
+			height: 30%;
+		}
+	}
+{{/DEFOLD_SPLASH_IMAGE}}
