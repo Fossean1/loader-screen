@@ -15,5 +15,5 @@ input_method = HiddenInputField
 title = loading-screen
 
 [library]
-include_dirs = loading-screen
+include_dirs = 
 
