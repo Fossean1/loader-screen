@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
-<body>
-	<div id="canvas-container" class="canvas-app-canvas-container" merge="keep">
-		<div id="defold-loading-screen" class="canvas-app-loading-screen">
-			<div id="defold-background" class="canvas-app-canvas-background"></div>
-			<div id="defold-logo" class="canvas-app-canvas-logo">
-				<div id="defold-progress" class="canvas-app-progress">
-					<div id="defold-progress-bar" class="canvas-app-progress-bar" style="transform: scaleX(0.0);"></div>
-				</div>
-			</div> 
-		</div>
-		<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="{{display.width}}" height="{{display.height}}"></canvas>
-	</div>
-	<script id='engine-loader' type='text/javascript' src="fast_average_color.min.js"></script>
-	<script id='engine-start' type='text/javascript' merge="keep">
-		console.log("test")
-	</script>
-	<script>
-		console.log('hello')
-	</script>
-</body>
+<html>
+    <body>
+     <script id='engine-loader' type='text/javascript' src='mydmloader.js'></script>
+     <script id='engine-start' type='text/javascript' merge='keep'>
+         my_load_engine();
+     </script>
+    </body>
 </html>
