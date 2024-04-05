@@ -16,56 +16,7 @@
 	</div>
 	<script id='engine-loader' type='text/javascript' src="fast_average_color.min.js"></script>
 	<script id='engine-start' type='text/javascript' merge="keep">
-		var runningFromFileWarning = document.getElementById("running-from-file-warning");
-		if (window.location.href.startsWith("file://")) {
-			runningFromFileWarning.style.display = "block";
-		}
-		else {
-			var defold_logo = document.getElementById("defold-logo");
-			var defold_logo_image_url = window.getComputedStyle(defold_logo).backgroundImage
-				.trim()
-				.replace(/^url\(['"](.+)['"]\)$/, '$1');
-		  
-			var fac = new FastAverageColor();
-			  fac.getColorAsync(defold_logo_image_url, {
-				  algorithm: 'dominant', 
-				  ignoredColor: [0, 0, 0, 0]
-			  })
-				.then(color => {
-					var defold_background = document.getElementById("defold-background");
-					defold_background.style.backgroundColor = color.rgb;
-				})
-				.catch(e => {
-					console.log(e);
-				});
-	
-			fac.getColorAsync(defold_logo_image_url, {
-				algorithm: 'sqrt', 
-				ignoredColor: [0, 0, 0, 0]
-			})
-				.then(color => {
-					var bar = document.getElementById(ProgressView.bar_id);
-					bar.style.backgroundColor = color.rgb;
-				})
-				.catch(e => {
-					console.log(e);
-				});
-				
-				ProgressView.addProgress = function() {
-					ProgressView.bar = document.getElementById(ProgressView.bar_id);
-					ProgressView.progress = document.getElementById(ProgressView.progress_id);
-				}
-			
-			ProgressView.removeProgress = function() {
-				var loading_screen = document.getElementById("defold-loading-screen");
-				if (loading_screen !== null) {
-					loading_screen.remove();
-				}
-			}
-			
-			EngineLoader.load("canvas", "{{exe-name}}");
-			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
-		}
+		console.log("test")
 	</script>
 	<script>
 		console.log('hello')
